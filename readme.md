@@ -1,43 +1,34 @@
-# AutoDeleteFileOnPCWechat
+# Clean My PC Wechat
 
 ![](https://markdown-pic-blackboxo.oss-cn-shanghai.aliyuncs.com/banner.png)
 
 [![](https://img.shields.io/badge/platform-win64-lightgrey)](https://github.com/blackboxo/AutoDeleteFileOnPCWechat/releases) [![](https://img.shields.io/github/v/release/blackboxo/AutoDeleteFileOnPCWechat)](https://github.com/blackboxo/AutoDeleteFileOnPCWechat/releases) [![](https://img.shields.io/github/downloads/blackboxo/AutoDeleteFileOnPCWechat/total)](https://github.com/blackboxo/AutoDeleteFileOnPCWechat/releases)
 
-自动删除 PC 端微信自动下载的大量文件、视频、图片等数据内容，解放你的空间。
+自动删除 PC 端微信自动下载的大量文件、视频、图片等数据内容，解放一年几十 G 的空间占用。
 
 该工具不会删除文字的聊天记录，请放心使用。请给个 **Star** 吧，非常感谢！
 
-**现已经支持微信官网下载的 PC 版本，和 Microsoft Store 下载的微信 for Windows 版本。**
-
-程序启动较慢，删除过程中如出现转圈等现象请耐心等待，删除结束将会有提示。
-
-**微信官网下载的 PC 版本：**
+**现已经支持 Windows 系统中的所有微信版本。**
 
 [国内地址 - 点击下载](
-https://deletefileonpcwechat.oss-cn-shanghai.aliyuncs.com/%E5%BE%AE%E4%BF%A1%E6%95%B0%E6%8D%AE%E8%87%AA%E5%8A%A8%E5%88%A0%E9%99%A4%E5%B7%A5%E5%85%B7.exe)
+https://www.lanzoux.com/iamuhh1owmb)
 
 [Github Release - 点击下载](
-https://github.com/blackboxo/AutoDeleteFileOnPCWechat/releases/download/v1.0/AutoDeleteFileOnPCWechat.exe)
+https://github.com/blackboxo/CleanMyWechat/releases/download/v2.0/CleanMyWechat.zip)
 
-**Microsoft Store 下载的微信 for Windows 版本：**
 
-[国内地址 - 点击下载](https://deletefileonpcwechat.oss-cn-shanghai.aliyuncs.com/%E5%BE%AE%E4%BF%A1forWindows%E6%95%B0%E6%8D%AE%E8%87%AA%E5%8A%A8%E5%88%A0%E9%99%A4%E5%B7%A5%E5%85%B7.exe)
-
-[Github Release - 点击下载](https://github.com/blackboxo/AutoDeleteFileOnPCWechat/releases/download/v1.0-forWindows/forWindows.exe)
-
-**如何找到微信文件的存储路径：**
-
-点击 PC 端微信左下角的按钮 -> 设置 -> 通用设置 -> 打开文件夹 -> 复制文件资源管理器的完整路径
 
 ## 特性
-1. 自由设置想要删除的文件类型，包括图片类缓存、文件、图片、视频；
-2. 自由设置需要删除的文件的距离时间，默认 24 个月；
-3. 删除后的文件放置在回收站中，检查后自行清空，防止删错需要的文件；
+1. 自动识别微信账号，支持用户选择自定义路径；
+2. 同时管理多个账号，保留配置参数，打开即用；
+3. 自由设置想要删除的文件类型，包括图片类缓存、文件、图片、视频；
+4. 自由设置需要删除的文件的距离时间，默认 365 天；
+5. 删除后的文件放置在回收站中，检查后自行清空，防止删错需要的文件；
+6. 支持删除进度的显示；
 
 ## 运行截图
 
-![](https://markdown-pic-blackboxo.oss-cn-shanghai.aliyuncs.com/20200216161434.png)
+![](https://markdown-pic-blackboxo.oss-cn-shanghai.aliyuncs.com/20200929151623.jpg)
 
 ## 微信现状
 
@@ -47,15 +38,35 @@ https://github.com/blackboxo/AutoDeleteFileOnPCWechat/releases/download/v1.0/Aut
 
 ## 待改进
 
-- [ ] 运行占用较多磁盘，待优化
-- [ ] 增加直接删除文件和文件夹选项，不放入回收站
-- [ ] 增加中途暂停及停止
-- [x] 支持 Mac 平台(Mac 版本自带清除缓存，不再开发该平台)
-- [x] 支持 Microsoft Store 下载的微信 for Windows 版本
-- [ ] 支持 Microsoft Store 下载的微信 UWP 版本(文件存储路径的命名规则尚不明确，有需求再开发)
+欢迎 PR！都会写进致谢！
+
+- [ ] Mac 版本的开发，微信 Mac 版存在缓存大量占用问题
+- [ ] 有用户有每日定时删除的需求，考虑让应用开机自启动并常驻后台，或者“将选项变成参数加到快捷方式里运行自动执行”
+- [ ] 增加企业微信的支持
+- [ ] Windows XP 系统的支持（当前打包方式为 PyQt5 + pyinstaller），打包命令为 pyinstaller -F -i icon.ico -w ngui.py
+- [ ] 增加应用打包后的签名
+- [x] ~~自动识别出的多个微信账号的路径，让用户选择哪几个账号的需要删除，并记录参数~~
+- [x] ~~更改为以天为单位~~
+- [x] ~~增加多个微信路径的支持，支持保存路径~~
+- [x] ~~支持 Microsoft Store 下载的微信 for Windows 版本~~
+- [x] ~~支持 Microsoft Store 下载的微信 UWP 版本~~
 
 ## 致谢
 
 [@mylittlefox](https://www.mylittlefox.art)：图标及 Banner 设计
 
 [@Gears](https://refun.eu.org)：提供微信 for Windows 版本的文件目录树及测试支持
+
+@SongJee：版本 1.1 的主要开发者，增加进度条，支持多个微信版本，自动识别路径
+
+[@LenmoisLemon](https://github.com/LenmoisLemon)：版本 2.0 的主要开发者，全新 UI 设计，增加多用户配置
+
+[@Louhwz](https://github.com/Louhwz)：版本 2.0 的主要开发者，增加多用户支持、多线程删除、自定义路径等
+
+## 开发者
+
+微博：@BlackBoXo
+
+邮箱：18110240013@fudan.edu.cn
+
+Blog：https://www.blackboxo.top/
